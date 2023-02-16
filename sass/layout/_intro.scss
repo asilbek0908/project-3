@@ -1,3 +1,30 @@
 // Intro section
 
+.intro {
+    background-image: url(./images/bg-image-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 72px 0;
+}
 
+.intro__title {
+    font: {
+        weight: 700;
+        size: functions(56px);
+    }
+
+    line-height: functions(56px);
+    letter-spacing: functions(-2.5px);
+    color: $main-color;
+    @include for-tablet-only{
+      margin-left: 70px;
+    }
+
+    @include for-phone-only{
+        text-align: center;
+        margin-left: 0;
+      }
+      font-size:functions(40px);
+    line-height:functions(40px);
+}
