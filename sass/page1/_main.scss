@@ -1,0 +1,94 @@
+// Main section
+
+.main {
+    background-image: url(./images/bg-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 153px 0 153px 165px;
+
+    @include for-tablet-only {
+        padding: 129px 98px 217px 98px;
+    }
+
+    @include for-phone-only {
+        padding: 115px 32px 179px 32px;
+    }
+}
+
+.main__head {
+    max-width: functions(500px);
+    position: relative;
+
+    @include for-tablet-only {
+        max-width: functions(573px);
+        text-align: center;
+    }
+    @include for-phone-only {
+        max-width: functions(311px);
+        margin: 0 auto;
+    }
+}
+
+.main__head-title {
+    font: {
+        weight: 700;
+        size: functions(56px);
+    }
+
+    line-height: functions(56px);
+    letter-spacing:functions(-2.5px);
+    color: $main-color;
+    @include transition-ease();
+}
+
+.main__head-title:hover {
+    @include transform();
+    cursor: pointer;
+}
+
+
+.main__head-desc {
+    font: {
+        weight: functions(400px);
+        size: functions(15px);
+    }
+
+    line-height: functions(25px);
+    color: $main-color;
+    margin-bottom: functions(40px);
+}
+
+
+.main__path {
+    width: functions(446.38px);
+    height: functions(99.37px);
+    position: absolute;
+    right: functions(288px);
+    bottom: 10px;
+    overflow: hidden;
+
+    @include for-tablet-only {
+        left: functions(-150px);
+        top: functions(500px);
+    }
+
+    @include for-phone-only {
+        left: functions(-300px);
+        top: functions(700px);
+    }
+}
+
+.main__path img {
+    @include transition-ease;
+}
+
+.main__path:hover img {
+    @include transform();
+    cursor: pointer;
+}
+
+.main__path img {
+    width: 100%;
+    height: 100%;
+}

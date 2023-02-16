@@ -1,0 +1,77 @@
+// Steps section
+
+.steps {
+    padding-top: functions(100px);
+}
+
+.steps__cards {
+    @include flexItems();
+    @include for-tablet-only{
+        flex-direction: column;
+        row-gap:functions(40px) ;
+    }
+   
+}
+
+
+.steps__card {
+    @include for-tablet-only{
+        display: flex; 
+        column-gap: functions(79px);  
+        align-items: center;
+    }
+    @include for-phone-only{
+        flex-direction: column;
+        
+    }
+
+}
+
+.steps__card-image {
+    background-color: $button-bg-color;
+    width: functions(96px);
+    height: functions(96px);
+    padding: functions(32px) functions(26px);
+    border-radius: 50%;
+    margin-bottom: functions(40px);
+
+    @include transition-ease();
+}
+
+.steps__card-image:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
+
+.steps__card-info {
+    max-width: 350px;
+    @include for-phone-only{
+       max-width:311px;
+       text-align: center;
+        
+    }
+}
+
+.steps__card-title {
+    font: {
+        weight: 700;
+        size: functions(24px);
+    }
+
+    line-height: functions(28px);
+    letter-spacing: functions(-1.07143px);
+    color: $h1-color;
+    margin-bottom: functions(27px);
+}
+
+.steps__card-desc {
+    font: {
+        weight: 400;
+        size: functions(15px);
+    }
+
+    line-height:functions( 25px);
+    color: #939CAA;
+}
+

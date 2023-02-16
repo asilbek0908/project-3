@@ -10,7 +10,11 @@
     }
 }
 
-
+@mixin for-tablet2-only{
+    @media screen and (max-width: 700px) {
+        @content;
+    }
+}
 
 @mixin for-phone-only {
     @media screen and (max-width:576px) {
@@ -19,5 +23,13 @@
 }
 
 @mixin transition-ease {
-    transition: all 1s ease;
+    transition: all 0.8s ease;
+}
+
+@mixin transform{
+    transform: scale(1.06,1.06);
+}
+
+@mixin transform2{
+    transform: rotate(360deg);
 }
