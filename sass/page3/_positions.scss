@@ -1,0 +1,49 @@
+// Position section
+
+.positions{
+    padding-top: 100px;
+}
+
+.positions__type{
+    @include flexItems();
+    margin-bottom: 24px;
+    background-color: $bg-color2;
+    padding: 32px 40px;
+    max-width: 1110px;
+    @include for-phone-only {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+}
+
+
+.positions__type-title{
+    font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: -1.07143px;
+color: $h1-color;
+@include for-phone-only {
+    font-size: 18px;
+    text-align: center;
+}
+}
+
+.positions__type-location{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: $h1-color;
+    @include for-phone-only {
+       
+        text-align: center;
+    }
+}
+
+.positions__info-link{
+    @include for-phone-only{
+        width: 247px;
+        text-align: center;
+    }
+}
+

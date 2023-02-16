@@ -899,4 +899,57 @@ p {
 .button:hover {
   cursor: pointer;
   transform: scale(1.06, 1.06);
+}
+
+.positions {
+  padding-top: 100px;
+}
+
+.positions__type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  background-color: #F2F5F9;
+  padding: 32px 40px;
+  max-width: 1110px;
+}
+@media screen and (max-width: 576px) {
+  .positions__type {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+}
+
+.positions__type-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+@media screen and (max-width: 576px) {
+  .positions__type-title {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+.positions__type-location {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #495567;
+}
+@media screen and (max-width: 576px) {
+  .positions__type-location {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .positions__info-link {
+    width: 247px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
