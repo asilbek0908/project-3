@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -12,9 +15,187 @@
     <link rel="icon" href="./images/scoot.svg">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="./sass/style.css">
-    <title>Sass Project</title>
+    <title>Careers page</title>
 </head>
+
 <body>
-    
+    <!-- Header section -->
+    <section id="header" class="header">
+        <div class="container">
+
+            <div class="header__head">
+                <input class="header__checkbox" type="checkbox" id="menu" name="menu">
+                <label class="bar" for="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <a class="header__logo" href="./index.html">
+                    <img src="./images/scoot.svg" alt="renting scooter">
+                </a>
+
+                <nav class="header__navigation">
+                    <div class="header__remove-btn">
+
+                        <label for="menu">
+                            <img src="./images/remove-button.svg" alt="remove-btn">
+                        </label>
+
+                    </div>
+                    <ul class="header__nav-items">
+                        <li class="header__nav-item ">
+                            <a class="header__link" href="./about.html">About</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__link" href="./location.html">Location</a>
+                        </li>
+                        <li class="header__nav-item active">
+                            <a class="header__link" href="#">Careers</a>
+                        </li>
+                    </ul>
+                    <a class="header__button link" href="#">Get Scootin</a>
+                </nav>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Header section -->
+
+    <!-- Intro section -->
+    <section id="intro" class="intro">
+        <div class="container">
+            <h1 class="intro__title">Careers</h1>
+        </div>
+    </section>
+    <!-- Intro section -->
+
+    <!-- Example section -->
+    <section id="example" class="example">
+        <div class="container">
+            <div class="example__head">
+                <div class="example__head-info">
+                    <h1 class="example__info-title">Care to join our mission?</h1>
+                    <p class="example__info-desc">We’re always looking for ambitious individuals to help us on our
+                        journey. If you’re passionate about our mission to provide clean, accessible transport to
+                        improve urban living we want to hear from you!</p>
+                    <a class="example__info-link link">Say Hello</a>
+                    </div>
+                <div class="example__head-image">
+                    <img src="./images/image-9 (6).png" alt="image-4">
+                </div>
+            </div>
+            <img class="example__image" src="./images/path-2.svg" alt="path">
+        </div>
+    </section>
+    <!-- Example section -->
+
+    <!-- Value section -->
+    <section id="value" class="value">
+        <div class="container">
+            <h1 class="value__title">Our values</h1>
+            <div class="value__cards">
+
+                <div class="value__card">
+
+                    <div class="value__card-image">
+                        <img src="./images/image-6 (4).png" alt="image-6">
+                        <p class="value__card-number">01</p>
+                    </div>
+                    <h1 class="value__card-title">Our tech</h1>
+                    <p class="value__card-desc">We’re using cutting edge technology to drive accessible urban
+                        transportation forward. Our fully electric scooters are a joy to ride!</p>
+
+                </div>
+
+                <div class="value__card">
+
+                    <div class="value__card-image">
+                        <img src="./images/image-7 (6).png" alt="image-6">
+                        <p class="value__card-number">02</p>
+                    </div>
+                    <h1 class="value__card-title">Our integrity</h1>
+                    <p class="value__card-desc">We are fully committed to deliver a great yet safe, sustainable
+                        micro-mobility experience in every city we serve.</p>
+
+                </div>
+
+                <div class="value__card">
+
+                    <div class="value__card-image">
+                        <img src="./images/image-8 (6).png" alt="image-6">
+                        <p class="value__card-number">03</p>
+                    </div>
+                    <h1 class="value__card-title">Our community</h1>
+                    <p class="value__card-desc">We support every community we serve. All workers are paid a living wage
+                        based on their location and are Scoot employees.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Value section -->
+
+
+
+    <!-- Footer section -->
+    <section id="footer" class="footer">
+        <span class="circle-1"></span>
+        <span class="circle-2"></span>
+        <span class="circle-3"></span>
+        <div class="container">
+            <div class="footer__info">
+                <h1 class="footer__info-title">Sign up and Scoot off today</h1>
+                <div class="footer__head-buttons">
+                    <a class="footer__button" href="https://play.google.com/store/apps/?hl=en&gl=US">
+                        <img src="./images/apple.svg" alt="app store">
+                        <p class="footer__button-title">Available on the<span class="span">AppStore</span></p>
+                    </a>
+                    <a class="footer__button" href="https://www.apple.com/app-store/">
+                        <img src="./images/google.svg" alt="google play">
+                        <p class="footer__button-title">Get it on<span class="span">GooglePlay</span></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="bottom" class="bottom">
+        <div class="container">
+            <div class="bottom__head">
+                <a class="bottom__logo" href="./index.html">
+                    <img src="./images/footer-logo (2).svg" alt="scoot renting">
+                </a>
+                <nav class="bottom__navigation">
+                    <ul class="bottom__nav-items">
+                        <li class="bottom__nav-items">
+                            <a class="bottom__link" href="./about.html">About</a>
+                        </li>
+                        <li class="bottom__nav-items  active">
+                            <a class="bottom__link" href="#">Careers</a>
+                        </li>
+                        <li class="bottom__nav-items">
+                            <a class="bottom__link" href="./location.html">Location</a>
+                        </li>
+                    </ul>
+                    <div class="bottom__socials">
+                        <a class="bottom__social" href="#">
+                            <i class="fa-brands fa-square-facebook fa-2x"></i>
+                        </a>
+                        <a class="bottom__social" href="#">
+                            <i class="fa-brands fa-twitter fa-2x"></i>
+                        </a>
+                        <a class="bottom__social" href="#">
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                </nav>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Footer section -->
+
 </body>
+
 </html>
