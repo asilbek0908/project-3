@@ -1,0 +1,42 @@
+// Maps section
+
+.maps{
+    padding-top: 100px;
+}
+
+
+.maps__image{
+    max-width: 1110px;
+    overflow: hidden;
+}
+
+.maps__image img{
+   @include transition-ease();
+   width: 100%;
+}
+
+.maps__image:hover img{
+    @include transform();
+    cursor: pointer;
+}
+
+
+.maps__countries{
+    display: none;
+    @include for-phone-only{
+        display: block;
+        margin-top: 50px;
+        text-align: center;
+        
+    }
+}
+
+.maps__country{
+    font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+padding: 20px 100px;
+background: rgba(252, 183, 43, 0.15);
+letter-spacing: -1.07143px;
+color: $h1-color;
+}
