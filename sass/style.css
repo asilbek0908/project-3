@@ -148,6 +148,10 @@ p {
   }
 }
 
+.header__nav-items .active .header__link {
+  color: #FCB72B;
+}
+
 .header__link {
   font-style: normal;
   font-weight: 700;
@@ -453,6 +457,10 @@ p {
     flex-direction: column;
     row-gap: 16px;
   }
+}
+
+.bottom__nav-items .active .bottom__link {
+  color: #FCB72B;
 }
 
 .bottom__logo {

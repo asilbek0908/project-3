@@ -114,7 +114,9 @@
     }
 }
 
-
+.header__nav-items .active .header__link{
+    color:$button-bg-color ;
+}
 
 .header__link {
 
