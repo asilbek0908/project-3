@@ -1,4 +1,11 @@
 // Foter section
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 .footer {
     margin-top: functions(100px);
@@ -11,7 +18,10 @@
 .footer__info {
     @include flexItems();
     @include for-tablet-only {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         row-gap: 40px;
         text-align: center;
     }
@@ -42,8 +52,12 @@ line-height: functions(32px);
 }
 
 .footer__head-buttons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    column-gap: 18px;
+    -webkit-column-gap: 18px;
+       -moz-column-gap: 18px;
+            column-gap: 18px;
 }
 
 
@@ -143,9 +157,14 @@ line-height: functions(32px);
 
 .bottom__head{
     @include flexItems();
-    column-gap: 58px;
+    -webkit-column-gap: 58px;
+       -moz-column-gap: 58px;
+            column-gap: 58px;
     @include for-phone-only{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         row-gap: 41px;
     }
 }
@@ -154,16 +173,24 @@ line-height: functions(32px);
     width: 100%;
     @include flexItems();
     @include for-phone-only{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         row-gap:85px;
     }
 }
 
 .bottom__nav-items{
     @include flexItems();
-    column-gap: 32px;
+    -webkit-column-gap: 32px;
+       -moz-column-gap: 32px;
+            column-gap: 32px;
     @include for-phone-only{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         row-gap:16px;
     }
 }
@@ -193,7 +220,9 @@ color: $button-bg-color;
 
 .bottom__socials{
     @include flexItems();
-    column-gap: 24px;
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
 }
 
  .bottom__social{
@@ -205,4 +234,3 @@ color: $button-bg-color;
     color: $main-color;
     @include transform2();
  }
-

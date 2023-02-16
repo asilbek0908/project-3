@@ -47,18 +47,24 @@ p {
   font-family: "Lexend Deca", sans-serif;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 .header__head {
   display: flex;
   align-items: center;
   justify-content: space-between;
   -moz-column-gap: 58px;
-       column-gap: 58px;
+  column-gap: 58px;
   padding: 22px;
 }
 @media screen and (max-width: 700px) {
   .header__head {
     -moz-column-gap: 35px;
-         column-gap: 35px;
+    column-gap: 35px;
   }
 }
 
@@ -126,12 +132,12 @@ p {
   align-items: center;
   justify-content: space-between;
   -moz-column-gap: 32px;
-       column-gap: 32px;
+  column-gap: 32px;
 }
 @media screen and (max-width: 700px) {
   .header__nav-items {
     -moz-column-gap: 15px;
-         column-gap: 15px;
+    column-gap: 15px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -161,6 +167,12 @@ p {
   }
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 .footer {
   margin-top: 6.25rem;
   background: #495567;
@@ -206,7 +218,7 @@ p {
 .footer__head-buttons {
   display: flex;
   -moz-column-gap: 18px;
-       column-gap: 18px;
+  column-gap: 18px;
 }
 
 .footer__button {
@@ -303,7 +315,7 @@ p {
   align-items: center;
   justify-content: space-between;
   -moz-column-gap: 58px;
-       column-gap: 58px;
+  column-gap: 58px;
 }
 @media screen and (max-width: 576px) {
   .bottom__head {
@@ -330,7 +342,7 @@ p {
   align-items: center;
   justify-content: space-between;
   -moz-column-gap: 32px;
-       column-gap: 32px;
+  column-gap: 32px;
 }
 @media screen and (max-width: 576px) {
   .bottom__nav-items {
@@ -364,7 +376,7 @@ p {
   align-items: center;
   justify-content: space-between;
   -moz-column-gap: 24px;
-       column-gap: 24px;
+  column-gap: 24px;
 }
 
 .bottom__social {
@@ -469,6 +481,12 @@ p {
   height: 100%;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 .steps {
   padding-top: 6.25rem;
 }
@@ -489,7 +507,7 @@ p {
   .steps__card {
     display: flex;
     -moz-column-gap: 4.9375rem;
-         column-gap: 4.9375rem;
+    column-gap: 4.9375rem;
     align-items: center;
   }
 }
@@ -540,6 +558,12 @@ p {
   color: #939CAA;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 .example {
   padding-top: 12.5rem;
 }

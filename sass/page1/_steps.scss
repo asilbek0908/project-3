@@ -1,4 +1,10 @@
-// Steps section
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 .steps {
     padding-top: functions(100px);
@@ -7,7 +13,10 @@
 .steps__cards {
     @include flexItems();
     @include for-tablet-only{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         row-gap:functions(40px) ;
     }
    
@@ -16,12 +25,21 @@
 
 .steps__card {
     @include for-tablet-only{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex; 
-        column-gap: functions(79px);  
-        align-items: center;
+        -webkit-column-gap: functions(79px); 
+           -moz-column-gap: functions(79px); 
+                column-gap: functions(79px);  
+        -webkit-box-align: center;  
+            -ms-flex-align: center;  
+                align-items: center;
     }
     @include for-phone-only{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         
     }
 
@@ -39,7 +57,9 @@
 }
 
 .steps__card-image:hover {
-    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
     cursor: pointer;
 }
 
@@ -74,4 +94,3 @@
     line-height:functions( 25px);
     color: #939CAA;
 }
-
