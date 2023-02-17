@@ -5,9 +5,9 @@
 }
 
 .container{
-    max-width: 1140px;
+    max-width:functions(1140px);
     margin: 0 auto;
-    padding: 0 20px;
+    padding:functions(0px) functions(20px);
 }
 
 ul{
