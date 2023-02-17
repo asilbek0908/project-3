@@ -11,11 +11,11 @@
 .intro__title {
     font: {
         weight: 700;
-        size: functions(56px);
+        size: convertToPx(56px);
     }
 
-    line-height: functions(56px);
-    letter-spacing: functions(-2.5px);
+    line-height: convertToPx(56px);
+    letter-spacing: convertToPx(-2.5px);
     color: $main-color;
     @include for-tablet-only{
       margin-left: 70px;
@@ -25,6 +25,6 @@
         text-align: center;
         margin-left: 0;
       }
-      font-size:functions(40px);
-    line-height:functions(40px);
+      font-size:convertToPx(40px);
+    line-height:convertToPx(40px);
 }

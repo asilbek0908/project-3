@@ -8,11 +8,11 @@
 
 
 .footer {
-    margin-top: functions(100px);
+    margin-top: convertToPx(100px);
     background: $h1-color;
     overflow: hidden;
     position: relative;
-    padding: functions(120px) functions(0px);
+    padding: convertToPx(120px) convertToPx(0px);
 }
 
 .footer__info {
@@ -28,21 +28,21 @@
 }
 
 .footer__info-title {
-    max-width: functions(415px);
+    max-width: convertToPx(415px);
     
     font: {
         weight: 700;
-        size: functions(48px);
+        size: convertToPx(48px);
     }
 
-    line-height:functions(48px);
-    letter-spacing: functions(-2.14286px);
+    line-height:convertToPx(48px);
+    letter-spacing: convertToPx(-2.14286px);
 
     color: $main-color;
     @include transition-ease();
     @include for-phone-only {
-        font-size: functions(32px);
-line-height: functions(32px);
+        font-size: convertToPx(32px);
+line-height: convertToPx(32px);
     }
 }
 
@@ -63,8 +63,8 @@ line-height: functions(32px);
 
 .footer__button {
     background: $link-color;
-    border-radius: functions(4px);
-    padding: functions(9px) functions(16px);
+    border-radius: convertToPx(4px);
+    padding: convertToPx(9px) convertToPx(16px);
     @include flexItems();
     @include transition-ease();
 }
@@ -76,11 +76,11 @@ line-height: functions(32px);
 .footer__button-title {
     font: {
         weight: 700;
-        size: functions(10px);
+        size: convertToPx(10px);
     }
 
-    line-height: functions(15px);
-    letter-spacing: functions(-0.446429px);
+    line-height: convertToPx(15px);
+    letter-spacing: convertToPx(-0.446429px);
     color: $h1-color;
 
 }
@@ -88,11 +88,11 @@ line-height: functions(32px);
 .span {
     font: {
         weight: 700;
-        size: functions(20px);
+        size: convertToPx(20px);
     }
 
-    line-height: functions(24px);
-    letter-spacing: functions( -0.892857px);
+    line-height: convertToPx(24px);
+    letter-spacing: convertToPx( -0.892857px);
     color: $h1-color;
     display:block;
 }
@@ -102,11 +102,11 @@ line-height: functions(32px);
     bottom: -200px;
     left: 660px;
     display: inline-block;
-    width: functions(347px) ;
-    height: functions(347px) ;
+    width: convertToPx(347px) ;
+    height: convertToPx(347px) ;
     opacity: 0.1;
     border-radius: 50%;
-    border: functions(15px) solid $link-color;
+    border: convertToPx(15px) solid $link-color;
     @include for-tablet-only{
         bottom: -200px;
         left: -150px;
@@ -119,11 +119,11 @@ line-height: functions(32px);
     bottom: -200px;
     left: 1000px;
     display: inline-block;
-    width: functions(347px) ;
-    height: functions(347px) ;
+    width: convertToPx(347px) ;
+    height: convertToPx(347px) ;
     opacity: 0.1;
     border-radius: 50%;
-    border: functions(15px) solid $link-color;
+    border: convertToPx(15px) solid $link-color;
     @include for-tablet-only{
         bottom: -200px;
         left: 200px;
@@ -140,8 +140,8 @@ line-height: functions(32px);
     bottom: -200px;
    right: -200px;
     display: inline-block;
-    width: functions(347px) ;
-    height: functions(347px) ;
+    width: convertToPx(347px) ;
+    height: convertToPx(347px) ;
     opacity: 0.1;
     border-radius: 50%;
     background: $link-color;
@@ -151,7 +151,7 @@ line-height: functions(32px);
 
 .bottom{
     background-color:$bg-color;
-   padding:functions(32px) functions(0px);
+   padding:convertToPx(32px) convertToPx(0px);
 }
 
 
@@ -211,9 +211,9 @@ line-height: functions(32px);
  .bottom__link{
     font: {
 weight:700;
-size:functions(15px);
+size:convertToPx(15px);
     }
-line-height:functions(25px);
+line-height:convertToPx(25px);
 color: $header-color;
 @include transition-ease();
 

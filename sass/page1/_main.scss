@@ -24,15 +24,15 @@
 }
 
 .main__head {
-    max-width: functions(500px);
+    max-width: convertToPx(500px);
     position: relative;
 
     @include for-tablet-only {
-        max-width: functions(573px);
+        max-width: convertToPx(573px);
         text-align: center;
     }
     @include for-phone-only {
-        max-width: functions(311px);
+        max-width: convertToPx(311px);
         margin: 0 auto;
     }
 }
@@ -40,11 +40,11 @@
 .main__head-title {
     font: {
         weight: 700;
-        size: functions(56px);
+        size: convertToPx(56px);
     }
 
-    line-height: functions(56px);
-    letter-spacing:functions(-2.5px);
+    line-height: convertToPx(56px);
+    letter-spacing:convertToPx(-2.5px);
     color: $main-color;
     @include transition-ease();
 }
@@ -57,32 +57,32 @@
 
 .main__head-desc {
     font: {
-        weight: functions(400px);
-        size: functions(15px);
+        weight: convertToPx(400px);
+        size: convertToPx(15px);
     }
 
-    line-height: functions(25px);
+    line-height: convertToPx(25px);
     color: $main-color;
-    margin-bottom: functions(40px);
+    margin-bottom: convertToPx(40px);
 }
 
 
 .main__path {
-    width: functions(446.38px);
-    height: functions(99.37px);
+    width: convertToPx(446.38px);
+    height: convertToPx(99.37px);
     position: absolute;
-    right: functions(288px);
+    right: convertToPx(288px);
     bottom: 10px;
     overflow: hidden;
 
     @include for-tablet-only {
-        left: functions(-150px);
-        top: functions(500px);
+        left: convertToPx(-150px);
+        top: convertToPx(500px);
     }
 
     @include for-phone-only {
-        left: functions(-300px);
-        top: functions(700px);
+        left: convertToPx(-300px);
+        top: convertToPx(700px);
     }
 }
 
